@@ -73,7 +73,6 @@ const ELDLogGrid: React.FC<ELDLogGridProps> = ({ activities, date, totals }) => 
                                     {s.label}
                                 </div>
 
-                                {/* Draw Log Activities for this status */}
                                 <svg className="absolute inset-0 w-full h-full overflow-visible pointer-events-none">
                                     {activities
                                         .filter(a => a.status === s.key)
