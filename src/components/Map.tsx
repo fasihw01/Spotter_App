@@ -4,7 +4,7 @@ import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import type { Route } from '../types';
 import { motion } from 'framer-motion';
-import { Navigation, MapPin, Package, Flag } from 'lucide-react';
+import {MapPin, Package, Flag } from 'lucide-react';
 import { renderToStaticMarkup } from 'react-dom/server';
 
 // Fix Leaflet default icon issues

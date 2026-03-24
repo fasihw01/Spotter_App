@@ -5,6 +5,16 @@ export interface TripFormData {
     current_cycle_used: number;
 }
 
+export interface TripListItem {
+    id: number;
+    current_location: string;
+    pickup_location: string;
+    dropoff_location: string;
+    total_miles: number;
+    created_at: string;
+    timestamp?: number;
+}
+
 export interface Activity {
     status: 'off_duty' | 'sleeper_berth' | 'driving' | 'on_duty_not_driving';
     start_hour: number;
@@ -94,6 +104,7 @@ export interface AuthResponse {
     access: string;
     refresh: string;
     user: User;
+    token?: string; // some API variants use token naming
 }
 
 export interface PaginatedResponse<T> {
